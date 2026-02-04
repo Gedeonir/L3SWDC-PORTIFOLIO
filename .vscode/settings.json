@@ -1,7 +1,11 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "liveServer.settings.port": 5502
 =======
     "liveServer.settings.port": 5501
 >>>>>>> c44cbba ( i made some changes)
+=======
+    "liveServer.settings.port": 5502
+>>>>>>> b6842c4 (i made some changes)
 }
