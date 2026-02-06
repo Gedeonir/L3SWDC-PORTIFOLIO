@@ -1,0 +1,136 @@
+/* COLORS: RED, BLACK, WHITE, BLUE */
+:root {
+  --red: #dc2626;
+  --blue: #2563eb;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--white);
+  color: var(--black);
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, var(--black), var(--blue));
+  color: var(--white);
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+.header-buttons {
+  margin-top: 1.5rem;
+}
+
+/* NAV */
+nav {
+  background: var(--black);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--red);
+}
+
+/* SECTIONS */
+section {
+  padding: 4rem 1.5rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--blue);
+}
+
+/* BUTTONS */
+.btn{
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0.3rem;
+  display: inline-block;
+  .btn {
+  pointer-events: auto;
+  position: relative;
+  z-index: 10;
+}
+
+.primary {
+  background: var(--red);
+  color: var(--white);
+}
+
+.secondary {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card, .project {
+  background: var(--white);
+  border: 2px solid var(--black);
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 12px;
+}
+
+/* CONTACT */
+.contact-links {
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: var(--black);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
