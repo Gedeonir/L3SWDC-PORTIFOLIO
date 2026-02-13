@@ -12,6 +12,18 @@ body {
   color: #333;
   background-color: #f9f9f9;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    color: #333;
+}
 
 /* Header */
 header {
@@ -79,7 +91,7 @@ header nav {
   padding: 0.7rem 1.5rem;
   border-radius: 5px;
   text-decoration: none;
-  transition: background 0.3s;
+  transition:  0.3s;
 }
 
 .btn:hover {
@@ -112,12 +124,76 @@ section {
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+/* Main sections */
+section {
+    background: white;
+    max-width: 750px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+section h2 {
+    margin-bottom: 15px;
+    color: #764ba2;
+    font-size: 24px;
+}
+
+/* Text */
+p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+}
+
+ul li {
+    background: #f2f2f2;
+    margin: 10px 0;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* Email link */
+a {
+    color: #667eea;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
 footer {
-  background: #222;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+    opacity: 0.85;
 }
