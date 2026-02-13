@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SHEMA NGABO YVAN | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(-45deg, #1a2a6c, #b21f1f, #fdbb2d);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #00eaff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      padding: 8px 0;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    ul li i {
+      color: #00eaff;
+      min-width: 20px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      opacity: 0.8;
+      font-size: 0.9rem;
+    }
+
+    /* Animations */
+    .fadeIn {
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.2rem; }
+      header p { font-size: 1rem; }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header class="fadeIn">
+    <h1>SHEMA NGABO YVAN</h1>
+    <p>Software Development Student | Web Developer | GitHub Enthusiast</p>
+  </header>
+
+  <section class="fadeIn">
+
+    <div class="card">
+      <h2><i class="fas fa-user"></i> About Me</h2>
+      <p>
+        I am Shema Ngabo Yvan, a motivated software development student with a passion
+        for web technologies and version control systems. I enjoy creating clean, 
+        user-friendly interfaces and collaborating effectively on GitHub projects. 
+        My goal is to become a professional web developer with strong teamwork skills.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-lightbulb"></i> Skills</h2>
+      <ul>
+        <li><i class="fab fa-html5"></i> HTML5 & Semantic Markup</li>
+        <li><i class="fab fa-css3-alt"></i> CSS3 & Animations</li>
+        <li><i class="fab fa-js-square"></i> JavaScript Fundamentals</li>
+        <li><i class="fab fa-git-alt"></i> Git & GitHub Collaboration</li>
+        <li><i class="fas fa-brain"></i> Problem Solving</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-code"></i> Projects</h2>
+      <ul>
+        <li><strong>Personal Portfolio Website:</strong> Built as part of a GitHub collaboration assignment, showcasing HTML, CSS, and responsive design.</li>
+        <li><strong>Mini Web Apps:</strong> Basic JavaScript projects demonstrating DOM manipulation and interactivity.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-envelope"></i> Contact</h2>
+      <ul>
+        <li><i class="fas fa-envelope"></i> Email: syvan317@gmail.com</li>
+        <li><i class="fab fa-github"></i> GitHub: <a href="https://github.com/yourusername" style="color:#00eaff;">github.com/SHEMAYVAN</a></li>
+      </ul>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 | Shema Ngabo Yvan
+  </footer>
+
+</body>
+</html>
