@@ -1,71 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Student Card</title>
+
     <style>
         body {
-            background-color: #f4f6f8;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             font-family: Arial, sans-serif;
         }
 
-        .portfolio-card {
-            width: 350px;
+        .card {
             background-color: white;
-            margin: 50px auto;
+            width: 300px;
             padding: 20px;
-            text-align: center;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
         }
 
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .name {
-            color: #333;
+        .card h2 {
             margin: 10px 0;
+            color: #2c3e50;
         }
 
-        .class,
-        .trade {
-            color: #555;
-            font-weight: bold;
+        .card p {
+            margin: 5px 0;
         }
 
-        .description {
+        .skills {
+            margin-top: 10px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 5px 10px;
+            margin: 4px;
+            border-radius: 5px;
             font-size: 14px;
-            color: #444;
-            margin: 15px 0;
-        }
-
-        .contact p {
-            font-size: 14px;
-            color: #222;
         }
     </style>
 </head>
+
 <body>
 
-    <div class="portfolio-card">
-        <img src="portifolio.png" alt="My Photo" class="profile-img">
+    <div class="card">
+        <h2>AKOGUTETA Polyte</h2>
+        <p><strong>Class:</strong> L3 SWDC</p>
 
-        <h1 class="name">AKOGUTETA Polyte</h1>
-        <p class="class">Class: Level 3</p>
-        <p class="trade">Trade: Software Development</p>
-
-        <p class="description">
-            I am a motivated student passionate about technology and software development.
-            I enjoy learning how to build websites and simple applications.
-        </p>
-
-        <div class="contact">
-            <p>Email: <span>polyte@example.com</span></p>
-            <p>Phone: <span>+250 788 000 000</span></p>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Git</span>
         </div>
     </div>
 
