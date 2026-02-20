@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #888;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.btn {
+  background: #333;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero h2 span {
+  color: #777;
+}
+
+.hero p {
+  margin: 1rem 0 2rem;
+  color: #666;
+}
+
+.big {
+  padding: 0.8rem 2rem;
+}
+
+/* SECTIONS */
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  max-width: 700px;
+  margin: auto;
+  color: #555;
+}
+
+.gray {
+  background: #f4f4f4;
+}
+
+/* SKILLS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+/* PROJECTS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+}
+
+.project span {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* CONTACT */
+.contact p {
+  margin-top: 0.5rem;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #fff;
+  color: #777;
+  border-top: 1px solid #eee;
+}
+
+    </style>
+</head>
+<body>
+  
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h1 class="logo">CYUSA<span>Y</span></h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact" class="btn">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Hi, I’m <span>CYUSA Yvan</span></h2>
+    <p>A passionate Web Developer building clean & modern web experiences.</p>
+    <a href="#projects" class="btn big">View My Work</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I’m a web developer focused on creating fast, responsive, and visually
+      appealing websites. I love turning ideas into real products using clean
+      code and modern tools.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section gray">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">HTML5</div>
+      <div class="card">CSS3</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Vue / React</div>
+      <div class="card">Node.js</div>
+      <div class="card">Git & GitHub</div>
+      <div class="card">UI / UX Design</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Personal Portfolio</h3>
+        <p>Modern responsive portfolio website.</p>
+        <span>HTML • CSS • JS</span>
+      </div>
+
+      <div class="project">
+        <h3>E-Commerce Website</h3>
+        <p>Online shop with cart & checkout.</p>
+        <span>React • Node</span>
+      </div>
+
+      <div class="project">
+        <h3>Dashboard App</h3>
+        <p>Admin dashboard with charts & APIs.</p>
+        <span>Vue • REST API</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section gray">
+    <h2>Contact Me</h2>
+    <p>Let’s work together and build something great.</p>
+    <div class="contact">
+      <p>Email: <strong>cyusayvan@gmail.com</strong></p>
+      <p>GitHub: <strong>github.com/cyusayvan</strong></p>
+      <p>LinkedIn: <strong>linkedin.com/in/cyusayvan</strong></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 CYUSA Yvan — All Rights Reserved</p>
+  </footer>
+
+
+
+    
+</body>
+</html>
