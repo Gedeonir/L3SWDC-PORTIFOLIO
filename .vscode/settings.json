@@ -1,6 +1,7 @@
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "liveServer.settings.port": 5502
 =======
     "liveServer.settings.port": 5501
@@ -8,4 +9,7 @@
 =======
     "liveServer.settings.port": 5502
 >>>>>>> b6842c4 (i made some changes)
+=======
+    "liveServer.settings.port": 5501
+>>>>>>> 95b933c (gael commit)
 }
